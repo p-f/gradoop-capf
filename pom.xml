@@ -157,6 +157,12 @@
             <groupId>org.gradoop</groupId>
             <artifactId>gradoop-flink</artifactId>
             <version>${dep.gradoop.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.opencypher</groupId>
+                    <artifactId>spark-cypher</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
@@ -198,6 +204,12 @@
             <type>test-jar</type>
             <scope>test</scope>
             <version>${dep.gradoop.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.opencypher</groupId>
+                    <artifactId>spark-cypher</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
